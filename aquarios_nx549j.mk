@@ -24,14 +24,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AquariOS stuff.
+$(call inherit-product, vendor/aquarios/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/nubia/nx549j/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_nx549j
+PRODUCT_NAME := aquarios_nx549j
 PRODUCT_DEVICE := nx549j
 PRODUCT_BRAND := nubia
 PRODUCT_MODEL := Nubia Z11 mini s
